@@ -1,12 +1,27 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <router-view name="navbar" />
     <router-view />
+    <loader v-if="isLoading" />
   </div>
 </template>
+
+<script>
+export default {
+  components: {
+    loader: () =>
+      import(
+        /* webpackChunkName: "c-loader" */
+        "@/components/Loader/Loader.vue"
+      ),
+  },
+  computed: {
+    isLoading() {
+      return this.$store.getters["loader/isLoading"];
+    },
+  },
+};
+</script>
 
 <style>
 #app {

@@ -3,6 +3,8 @@
 ## Project setup
 ```
 npm install
+or
+yarn
 ```
 
 ### Compiles and hot-reloads for development
@@ -13,6 +15,11 @@ npm run serve
 ### Compiles and minifies for production
 ```
 npm run build
+```
+
+### Jest unit test
+```
+npm run test
 ```
 
 ### Lints and fixes files
