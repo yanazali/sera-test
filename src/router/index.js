@@ -50,8 +50,8 @@ const routes = [
     },
   },
   {
-    path: '/add-blog-post',
-    name: 'add-blog-post',
+    path: "/add-blog-post",
+    name: "add-blog-post",
     components: {
       navbar: Navbar,
       default: () =>
@@ -62,8 +62,8 @@ const routes = [
     },
   },
   {
-    path: '/edit-blog-post/:id',
-    name: 'edit-blog-post',
+    path: "/edit-blog-post/:id",
+    name: "edit-blog-post",
     components: {
       navbar: Navbar,
       default: () =>
